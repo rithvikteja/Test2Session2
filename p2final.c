@@ -12,8 +12,8 @@ int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
   b=sqrt(pow((x3-x2),2)+pow((y3-y2),2));
   c=sqrt(pow((x1-x3),2)+pow((y1-y3),2));
   if((a+b)>c && (b+c)>a && (c+a)>b)
-    return 1;
-  else
+   return 1;
+  else 
     return 0;
 }
 void output(float x1, float y1, float x2, float y2,float x3, float y3, int istriangle)
