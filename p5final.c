@@ -1,4 +1,4 @@
-[9:29 AM, 3/30/2022] Fariha: #include<stdio.h>
+ #include<stdio.h>
 int input_array_size()
 {
   int n;
@@ -33,7 +33,9 @@ void output(int n, int a[n])
   int i;
   printf("prime numbers are\n");
   for(i=1; i<n;i++)
-    printf("%d,",a[i]);
+    if(a[i]!=0)
+    printf(" %d ",a[i]);
+  printf("\n");
 }
 int main()
 {
